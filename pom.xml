@@ -77,7 +77,7 @@
                             <classpathPrefix>lib/</classpathPrefix>
                             <classpathLayoutType>simple</classpathLayoutType>
 
-                            <mainClass>unlimint.orders.Main</mainClass>
+                            <mainClass>unlimint.orders.SpringMain</mainClass>
                         </manifest>
 
                     </archive>
@@ -88,6 +88,11 @@
     </build>
 
     <dependencies>
+        <!-- Spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
         <!-- Logging with SLF4J & LogBack -->
         <dependency>
             <groupId>org.slf4j</groupId>

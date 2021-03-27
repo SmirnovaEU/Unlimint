@@ -2,6 +2,7 @@ package unlimint.orders.parsing;
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
+import org.springframework.stereotype.Component;
 import unlimint.orders.model.Order;
 
 import java.io.FileNotFoundException;
@@ -11,6 +12,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class ParserCSV implements FileParser {
     public List<Order> parse(String fileName) {
         List<Order> orders = new ArrayList<>();
